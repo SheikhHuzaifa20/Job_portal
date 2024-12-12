@@ -147,7 +147,7 @@ class HomeController extends Controller
         $contact->email = $request->input('email');
         $contact->address = $request->input('address');
         $contact->message = $request->input('message');
-        $contact->email_verified_at = Carbon::now();
+        $contact->email_verified_at = Carbon::now();                                                                
 
         $contact->save();
 

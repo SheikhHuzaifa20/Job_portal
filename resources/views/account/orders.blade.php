@@ -65,7 +65,6 @@
 
                                                             @if ($job)
                                                                 @foreach ($job as  $index => $val)
-                                                                    {{-- @dd($job) --}}
                                                                     {{-- @foreach ($post_job as $post) --}}
                                                                     <tr>
                                                                         <td>{{ $index + 1 }}</td>

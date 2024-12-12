@@ -169,7 +169,7 @@ class Post_jobController extends Controller
     
         $post_job = post_job::findOrFail($id);
         $userId = Auth::id();
-
+        
         JobApplication::create([
             'post_job_id' => $post_job->id,
             'user_id' => $userId,

@@ -2,7 +2,7 @@
 <div class="header">
     <div class="container">
         <div class="row">
-            <div class="col-md-2 col-sm-3 col-xs-12 navbar-light"> <a href="/" class="logo"><img
+            <div class="col-md-2 col-sm-3 col-xs-12 navbar-light"> <a href="{{ route('home') }}" class="logo"><img
                         src="{{ url('asset/images/logo.png') }}" alt="" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-main"
                     aria-controls="navMain" aria-expanded="false" aria-label="Toggle navigation">

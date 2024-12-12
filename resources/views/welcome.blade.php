@@ -367,9 +367,6 @@
                                         <a href="javascript:void(0)" class="applybtn" onclick="showLoginAlert()">Apply
                                             Now</a>
                                     @endif
-                                    {{-- <a href="javascript:void(0)" class="applybtn applyjob" data-job_id="{{ $value->id }}">
-                                        Apply Now
-                                    </a> --}}
                                 </div>
                                 {{-- <input type="submit"
                                                 style="color: black; background-color:  rgb(47, 143, 239)"
