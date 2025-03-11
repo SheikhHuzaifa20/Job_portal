@@ -13,10 +13,10 @@
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
 
-<script src="lib/wow/wow.min.js"></script>
-<script src="lib/easing/easing.min.js"></script>
-<script src="lib/waypoints/waypoints.min.js"></script>
-<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="{{url("asset/lib/wow/wow.min.js")}}"></script>
+<script src="{{url("asset/lib/easing/easing.min.js")}}"></script>
+<script src="{{url("asset/lib/waypoints/waypoints.min.js")}}"></script>
+<script src="{{url("asset/lib/owlcarousel/owl.carousel.min.js")}}"></script>
 
 <script src="{{url("asset/js/jquery.min.js")}}"></script>
 <script src="{{url("asset/js/bootstrap.min.js")}}"></script>
