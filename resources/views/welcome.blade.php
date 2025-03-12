@@ -32,14 +32,13 @@
                         <div class="col-md-4">
                             <select class="form-control" name="location">
                                 <option value="">Location</option>
-                                <option>Pakistan</option>
-                                <option>Turkey</option>
+                                @foreach ($post as $key => $value)
+                                <option>{{ $value->location }}</option>
+                                @endforeach
+                                {{-- <option>Pakistan</option>
                                 <option>Dubai</option>
-                                <option>Goa</option>
-                                <option>Germany</option>
-                                <option>Thailand</option>
-                                <option>America</option>
-                                <option>Singapore</option>
+                                <option>Turkey</option>
+                                <option>Goa</option> --}}
                                 <!-- <option>52 Muslimabad Karachi</option>
                                 <option>Hyderabad Colony 255</option>
                                 <option>DHA</option> -->
@@ -349,7 +348,7 @@
                                     <h4><a href="#.">{{ $value->job_title }}</a></h4>
                                     {{-- <div class="company"><a href="#.">Datebase Management Company</a></div> --}}
                                     <div class="jobloc"><label class="fulltime">{{ $value->employment }}</label> -
-                                        <span>New York</span>
+                                        <span>{{ $value->location }}</span>
                                     </div>
                                 </div>
                                 <div class="col-md-3 col-sm-3">

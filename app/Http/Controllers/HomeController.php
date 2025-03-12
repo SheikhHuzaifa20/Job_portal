@@ -62,7 +62,7 @@ class HomeController extends Controller
         ->limit(10)
         ->get();
         $post = DB::table('post_job')->where('feature_job', 0)
-       ->orderBy('id' , 'desc')
+       ->orderBy('id' , 'asc')
         // ->limit(10)
         ->get();
         // return $post;
