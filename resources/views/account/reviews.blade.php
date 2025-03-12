@@ -76,11 +76,12 @@
                                                                         <td>            
                                                                             @if ($a->status !== 'approved')
                                                                                 <a class="btn btn-primary"
-                                                                                    href="{{ route('approvaled', ['id' => $a->id]) }}">Approved
+                                                                                    href="{{ route('approvaled', ['id' => $a->id]) }}">Request
                                                                                 </a>
                                                                             @else
-                                                                                <span class="text-success">Approved</span>
-                                                                                <!-- Show a text instead of the button -->
+                                                                                <a class="btn btn-success"
+                                                                                    href="{{ route('approvaled', ['id' => $a->id]) }}">Approved
+                                                                                </a>
                                                                             @endif
                                                                             <hr>
                                                                             <form
@@ -89,7 +90,7 @@
                                                                                 @csrf
                                                                                 @method('DELETE')
                                                                                 <button class="btn btn-danger"
-                                                                                    type="submit">Reject</button>
+                                                                                    type="submit">DELETE</button>
                                                                             </form>
                                                                         </td>
                                                                     </tr>

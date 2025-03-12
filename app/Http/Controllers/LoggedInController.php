@@ -83,10 +83,16 @@ public function approvaled(Request $request, $id)
 {
     // Find the job application by its ID
     $job_application = JobApplication::findOrFail($id);
-
     // Update the 'status' column to 'approved'
-    $job_application->status = 'approved';
-    $job_application->save();
+	// dd($job_application->status === null);
+	if($job_application->status === null){
+		$job_application->status = 'approved';
+		$job_application->save();
+	}
+	elseif($job_application->status === 'approved'){
+		$job_application->status = null;
+		$job_application->save();
+	}
 
     // Redirect back with a success message
     return redirect()->back()->with('success', 'Job application approved successfully!');

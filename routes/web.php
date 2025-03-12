@@ -277,16 +277,16 @@ Route::post( '/Credentials', [Post_jobController::class, 'Credentials'])->name( 
 Route::get('/approved/{id}',[Post_jobController::class, 'approved'])->name('approved');
 Route::delete('/product/delete/{id}',[Post_jobController::class, 'product_destroy'])->name('delete_product');
 
-// Route::get('signout', function() {
-//     Auth::logout();
-//     Session::flash('flash_message', 'You have logged out  Successfully');
-//     Session::flash('alert-class', 'alert-success');
-//     return redirect('signin');
-// });
-// Route::post('/signout', function () {
-//     Auth::logout();
-//     return redirect('/signin')->with('success', 'You have successfully signed out!');
-// })->name('signout');
+Route::get('signout', function() {
+    Auth::logout();
+    Session::flash('flash_message', 'You have logged out  Successfully');
+    Session::flash('alert-class', 'alert-success');
+    return redirect('signin');
+});
+Route::post('/signout', function () {
+    Auth::logout();
+    return redirect('/signin')->with('success', 'You have successfully signed out!');
+})->name('signout');
 
 
 Route::get('/applyJob/{id}', [Post_jobController::class, 'applyJob'])->name('applyJob');
